@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="./index.css" />
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <main id="root">
+      <section>
+        <button id="modal-trigger">Open Modal</button>
+      </section>
+      <section></section>
+      <section></section>
+
+      <div id="modal-wrapper" aria-hidden="true">
+        <div id="modal-overlay">
+          <div id="modal-content" tabindex="-1" role="dialog" alia-modal="true">
+            <div id="modal-header">
+              <button id="modal-close-btn">Close</button>
+            </div>
+            <div id="modal-body">
+              <h1>Modal</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

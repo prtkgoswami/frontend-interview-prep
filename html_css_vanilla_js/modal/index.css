@@ -1,0 +1,74 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  position: relative;
+}
+main > section {
+  height: 100vh;
+  width: 100%;
+}
+
+#root > section:nth-child(1) {
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#root > section:nth-child(2) {
+  background-color: green;
+}
+#root > section:nth-child(3) {
+  background-color: blue;
+}
+
+#modal-trigger {
+  padding: 10px 20px;
+  font-size: 22px;
+}
+#modal-wrapper {
+  display: none;
+}
+#modal-wrapper.show {
+  display: block;
+}
+
+#modal-overlay {
+  min-height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000000dd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#modal-content {
+  width: 60%;
+  padding: 20px;
+  background-color: #e5e5e5;
+  border-radius: 10px;
+}
+
+#modal-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#modal-close-btn {
+  padding: 10px 15px;
+  cursor: pointer;
+}
+#modal-body {
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

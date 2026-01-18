@@ -1,0 +1,60 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #e5e5e5;
+}
+
+main {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+#list-container {
+  width: 60%;
+  border: 2px solid #bbbb;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-height: 620px;
+  overflow-y: auto;
+}
+
+.list-item {
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  border-radius: 10px;
+  background-color: ivory;
+}
+
+#list-load-more-indicator {
+  justify-content: center;
+  background-color: burlywood;
+  gap: 15px;
+}
+#loading-spinner {
+  height: 20px;
+  width: 20px;
+  border: 3px solid rgb(124, 103, 76);
+  border-left: none;
+  border-top: none;
+  border-radius: 75%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Debounce & Throttle Utility</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <main>
+      <input type="text" name="" id="text-input" placeholder="Type Here..." />
+
+      <fieldset id="mode-selector" name="mode-selector">
+        <legend>Mode Select</legend>
+        <label for="mode-selector-debounce"
+          >Debounce
+          <input
+            type="radio"
+            name="mode"
+            id="mode-selector-debounce"
+            value="mode-debounce"
+        /></label>
+
+        <label for="mode-selector-throttle"
+          >Throttle
+          <input
+            type="radio"
+            name="mode"
+            id="mode-selector-throttle"
+            value="mode-throttle"
+        /></label>
+      </fieldset>
+
+      <div id="log-wrapper">
+        <h2>Logs</h2>
+        <p id="log"></p>
+      </div>
+    </main>
+  </body>
+</html>

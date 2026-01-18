@@ -1,0 +1,35 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  padding: 20px;
+}
+
+#autocomplete-wrapper {
+  width: 400px;
+}
+
+#query-input {
+  width: 100%;
+  padding: 10px;
+}
+
+#suggestions-container {
+  border: 1px solid #a5a5a5;
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+.suggestion {
+  cursor: pointer;
+  padding: 10px;
+}
+.suggestion:hover,
+.suggestion:focus-visible {
+  background-color: #e2e2d5;
+}
