@@ -90,6 +90,13 @@ function findStartEnd(arr, x) {
     return [start, end]
 }
 
-console.log(findStartEnd([1, 3, 5, 5, 5, 5, 67, 123, 125], 5))
-console.log(findStartEnd([1, 3, 5, 5, 5, 5, 7, 123, 125], 7))
-console.log(findStartEnd([1, 2, 3], 4))
+function run(fn) {
+    console.time("Time");
+    console.log("Output: ", fn());
+    console.timeEnd("Time")
+    console.log()
+}
+
+run(() => findStartEnd([1, 3, 5, 5, 5, 5, 67, 123, 125], 5))
+run(() => findStartEnd([1, 3, 5, 5, 5, 5, 7, 123, 125], 7))
+run(() => findStartEnd([1, 2, 3], 4))

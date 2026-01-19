@@ -1,0 +1,76 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  width: 100%;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#comments-container {
+  width: 50%;
+  border: 1px solid lightgray;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 25px;
+  max-height: calc(100vh * 0.8);
+  overflow-y: auto;
+  border-radius: 10px;
+}
+#comments-container:not([data-edit]) {
+  cursor: pointer;
+}
+
+/* Comment Styling */
+.comment {
+  width: 100%;
+  background-color: blanchedalmond;
+  border-radius: 10px;
+  padding: 15px 15px;
+  box-sizing: border-box;
+  box-shadow: 2px 2px 5px lightgray;
+}
+.comment-text {
+  font-size: 16px;
+  font-family: sans-serif;
+}
+.comment[data-edit] .comment-text {
+  display: none;
+}
+
+/* Edit Comment Styling */
+.comment-edit-body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.comment:not([data-edit]) .comment-edit-body {
+  display: none;
+}
+.comment-edit-input {
+  width: 100%;
+  font-size: 16px;
+  padding: 10px 15px;
+  box-sizing: border-box;
+}
+.comment-edit-actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 15px;
+}
+.comment-edit-save-btn,
+.comment-edit-cancel-btn {
+  font-size: 16px;
+  padding: 10px 20px;
+  width: 100px;
+  cursor: pointer;
+}
