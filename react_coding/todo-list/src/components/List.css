@@ -1,0 +1,29 @@
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  align-items: center;
+}
+
+li {
+  width: 40%;
+  padding: 15px 20px;
+  font-size: 18px;
+  border: 2px solid goldenrod;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 30px 1fr 30px;
+  gap: 10px;
+  align-items: center;
+}
+
+li > input[type="checkbox"] {
+  height: 20px;
+  width: 20px;
+}
+li > button {
+  height: 30px;
+  width: 30px;
+}

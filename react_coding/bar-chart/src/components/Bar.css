@@ -1,0 +1,32 @@
+.bar {
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+  flex: 1;
+}
+
+.tooltip {
+  width: max-content;
+  background-color: #414141;
+  color: #e5e5e5;
+  padding: 8px;
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -120%);
+  z-index: 50;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.bar:hover .tooltip {
+  opacity: 1;
+}
+
+.tooltip p {
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+  letter-spacing: 1px;
+}

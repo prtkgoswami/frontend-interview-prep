@@ -1,0 +1,36 @@
+#chart-container {
+  height: 500px;
+  width: 60%;
+  border: 2px solid black;
+  border-right: 0;
+  border-top: 0;
+  position: relative;
+}
+
+#chart {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+#x-axis-label,
+#y-axis-label {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+}
+
+#x-axis-label {
+  bottom: -20px;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+#y-axis-label {
+  top: 50%;
+  left: -20px;
+  transform: rotate(-90deg) translate(50%, -100%);
+}
