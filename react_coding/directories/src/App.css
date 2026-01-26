@@ -1,0 +1,67 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+
+#app-wrapper {
+  min-height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 280px 1fr;
+}
+main {
+  height: 100%;
+}
+
+nav {
+  background-color: lavender;
+  height: 100%;
+}
+#directory-wrapper {
+  margin-top: 50px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 20px;
+}
+.folder {
+  cursor: pointer;
+}
+.file {
+  cursor: default;
+}
+.folder > ul {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.2s ease-in-out;
+}
+.folder.expanded > ul {
+  max-height: 1000px;
+}
+ul li {
+  margin: 10px auto;
+}
+
+li > p {
+  display: grid;
+  grid-template-columns: 20px 1fr;
+}
+.icon {
+  font-size: 16px;
+  margin-right: 5px;
+  transform: rotate(0deg);
+  transition: transform 0.2s ease-in-out;
+}
+.expanded > p .icon {
+  transform: rotate(90deg);
+}
+.empty-text {
+  font-size: 14px;
+  color: gray;
+  padding-left: 16px;
+}
