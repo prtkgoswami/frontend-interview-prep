@@ -1,0 +1,15 @@
+.list-wrapper {
+  width: 50%;
+  overflow-y: auto;
+}
+.list-inner-container {
+  list-style: none;
+  padding: 10px 20px;
+}
+
+.list-item {
+  background-color: lavender;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-align: center;
+}
